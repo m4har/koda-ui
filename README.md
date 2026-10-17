@@ -114,6 +114,10 @@ Rendered from the consumer gallery route (`koda-example` → `/gallery`) at 1440
 | --- | --- | --- |
 | ![auth-card](docs/captures/auth-card.png) | ![modal](docs/captures/modal.png) | ![batches](docs/captures/batches.png) |
 | --- | --- | --- |
+| ![alumni-carousel](docs/captures/alumni-carousel.png) | ![next-dirimu-band](docs/captures/next-dirimu-band.png) | ![career-pillars](docs/captures/career-pillars.png) |
+| --- | --- | --- |
+| ![curriculum-accordion](docs/captures/curriculum-accordion.png) | | |
+| --- | --- | --- |
 
 Light theme (`ui/` primitives, 2x scale):
 
