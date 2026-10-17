@@ -1,0 +1,2433 @@
+{
+ "evidence_id": "ev_03f8a91c0672ffec900b26daccc8b64d09daff841cec9e7a5446479008dbdc6e",
+ "subject": null,
+ "provider": {
+  "id": "rea-cdp-browser",
+  "name": "REA Chrome DevTools Protocol observation provider",
+  "version": "2"
+ },
+ "analysis_profile": null,
+ "predicate_type": "rea.web-page-inspection",
+ "operation": "inspect_web_page",
+ "parameters": {
+  "cdp_endpoint": "http://127.0.0.1:9333",
+  "allowed_origins": [
+   "https://www.kodacademy.id"
+  ],
+  "target_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+  "observation_ms": 800,
+  "include_accessibility_text": true,
+  "include_console_text": false,
+  "include_json_body_shapes": false,
+  "include_websocket_shapes": false,
+  "include_storage_keys": false,
+  "include_storage_fingerprints": false,
+  "include_script_sources": false
+ },
+ "raw_result": null,
+ "normalized_result": {
+  "browser": {
+   "product": "Chrome/152.0.7977.82",
+   "protocol_version": "1.3",
+   "revision": "537.36 (@d04cdb24d67b081f6cf80200ffc5233f44b61109)",
+   "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+   "js_version": "15.2.124.21"
+  },
+  "target": {
+   "target_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+   "type": "page",
+   "title": "Koda | Coding Bootcamp Indonesia",
+   "url": "https://www.kodacademy.id/",
+   "origin": "https://www.kodacademy.id",
+   "attached": false
+  },
+  "capture_window": {
+   "started_at": "2026-10-17T06:33:05.971Z",
+   "ended_at": "2026-10-17T06:33:10.225Z",
+   "observation_ms": 800
+  },
+  "completeness": {
+   "status": "policy_filtered",
+   "conditions": [
+    "attach_limited",
+    "policy_filtered"
+   ],
+   "policy_filtered_sections": [
+    "console_events",
+    "console_text",
+    "json_body_shapes",
+    "metadata",
+    "resources",
+    "script_sources",
+    "scripts",
+    "storage_keys",
+    "websocket_shapes"
+   ],
+   "attach_limited_sections": [
+    "console_events",
+    "metadata",
+    "network_requests",
+    "websocket_connections",
+    "websocket_frames"
+   ],
+   "truncated_sections": [],
+   "unavailable_sections": [],
+   "excluded": [
+    {
+     "section": "console_events",
+     "reason": "disallowed_origin",
+     "count": 4
+    },
+    {
+     "section": "console_text",
+     "reason": "not_approved",
+     "count": null
+    },
+    {
+     "section": "json_body_shapes",
+     "reason": "not_approved",
+     "count": null
+    },
+    {
+     "section": "metadata",
+     "reason": "disallowed_origin",
+     "count": 268
+    },
+    {
+     "section": "metadata",
+     "reason": "unsupported_url",
+     "count": 11
+    },
+    {
+     "section": "resources",
+     "reason": "disallowed_origin",
+     "count": 95
+    },
+    {
+     "section": "resources",
+     "reason": "unsupported_url",
+     "count": 21
+    },
+    {
+     "section": "script_sources",
+     "reason": "not_approved",
+     "count": 9
+    },
+    {
+     "section": "scripts",
+     "reason": "disallowed_origin",
+     "count": 27
+    },
+    {
+     "section": "storage_keys",
+     "reason": "not_approved",
+     "count": null
+    },
+    {
+     "section": "websocket_shapes",
+     "reason": "not_approved",
+     "count": null
+    }
+   ],
+   "dropped_events": {
+    "scripts": 0,
+    "network_requests": 0,
+    "console_events": 0,
+    "websocket_connections": 0,
+    "websocket_frames": 0,
+    "webmcp_tools": 0,
+    "timeline_events": 0,
+    "total": 0
+   }
+  },
+  "frames": [
+   {
+    "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+    "parent_frame_id": null,
+    "url": "https://www.kodacademy.id/",
+    "origin": "https://www.kodacademy.id"
+   }
+  ],
+  "dom": {
+   "total_nodes": 7155,
+   "tag_histogram": {
+    "DIV": 4023,
+    "::after": 1109,
+    "#text": 750,
+    "P": 601,
+    "IMG": 244,
+    "#comment": 105,
+    "BUTTON": 43,
+    "svg": 39,
+    "::before": 30,
+    "path": 29,
+    "LINK": 24,
+    "use": 21,
+    "SCRIPT": 18,
+    "STYLE": 18,
+    "META": 17,
+    "A": 12,
+    "INPUT": 12,
+    "LI": 11,
+    "SPAN": 8,
+    "I": 4
+   }
+  },
+  "accessibility": {
+   "total_nodes": 5198,
+   "roles": {
+    "generic": 2971,
+    "InlineTextBox": 692,
+    "StaticText": 594,
+    "paragraph": 579,
+    "none": 316,
+    "button": 20,
+    "link": 9,
+    "heading": 6,
+    "list": 3,
+    "listitem": 2,
+    "RootWebArea": 1,
+    "form": 1,
+    "LabelText": 1,
+    "tooltip": 1,
+    "group": 1,
+    "textbox": 1
+   },
+   "named_controls": [
+    {
+     "role": "heading",
+     "name": "Fokus Kami untuk Karirmu"
+    },
+    {
+     "role": "heading",
+     "name": "Jadwal Bootcamp Terdekat"
+    },
+    {
+     "role": "heading",
+     "name": "Proses Pendaftaran Simpel Dalam 4 Langkah"
+    },
+    {
+     "role": "link",
+     "name": "Daftar Sekarang"
+    },
+    {
+     "role": "link",
+     "name": "Daftar Sekarang"
+    },
+    {
+     "role": "heading",
+     "name": "Kamu fokus belajar, sisanya kami siapkan."
+    },
+    {
+     "role": "heading",
+     "name": "Pertanyaan yang Sering Diajukan"
+    },
+    {
+     "role": "link",
+     "name": "Chat Tim Koda"
+    },
+    {
+     "role": "heading",
+     "name": "Jadi Programmer Profesional dalam 14 Minggu"
+    },
+    {
+     "role": "link",
+     "name": "Instagram"
+    },
+    {
+     "role": "link",
+     "name": "Linkedin"
+    },
+    {
+     "role": "link",
+     "name": "Youtube"
+    },
+    {
+     "role": "link",
+     "name": "NEXT DIRIMU"
+    },
+    {
+     "role": "tooltip",
+     "name": "M. Faisal Ilham #Alumni 2025 SOFTWARE ENGINEER"
+    },
+    {
+     "role": "button",
+     "name": "Langganan"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 1"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 2"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 3"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 4"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 5"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 6"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 7"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 8"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 9"
+    },
+    {
+     "role": "button",
+     "name": "Putar slide 10"
+    },
+    {
+     "role": "group",
+     "name": "Carousel pagination controls"
+    },
+    {
+     "role": "listitem",
+     "name": "1 of 4"
+    },
+    {
+     "role": "listitem",
+     "name": "2 of 4"
+    },
+    {
+     "role": "button",
+     "name": "Previous"
+    },
+    {
+     "role": "button",
+     "name": "Next"
+    },
+    {
+     "role": "button",
+     "name": "01 Dasar Pemrograman Web LIHAT 6 MATERI"
+    },
+    {
+     "role": "button",
+     "name": "02 Front End Development LIHAT 4 MATERI"
+    },
+    {
+     "role": "button",
+     "name": "03 Back End Development LIHAT 8 MATERI"
+    },
+    {
+     "role": "button",
+     "name": "04 DevOps & Deployment LIHAT 2 MATERI"
+    },
+    {
+     "role": "button",
+     "name": "05 Capstone Project LIHAT 1 MATERI"
+    },
+    {
+     "role": "button",
+     "name": "06 Career Preparation LIHAT 1 MATERI"
+    },
+    {
+     "role": "link",
+     "name": "Daftar Sekarang"
+    },
+    {
+     "role": "link",
+     "name": "Daftar Sekarang"
+    },
+    {
+     "role": "button",
+     "name": "Tonton cerita lengkap"
+    }
+   ]
+  },
+  "scripts": {
+   "total": 9,
+   "items": [
+    {
+     "script_key": "scr_140131f9a45dbf1a79721269da33451f2edf362e4a5e7101d3eecbcd1b31e110",
+     "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+     "url": "https://www.kodacademy.id/",
+     "origin": "https://www.kodacademy.id",
+     "cdp_hash": "a8e8b94f4f165b51ed7396000f3e02ef14211ad55831b2da71c1a2f6c9aedcbc",
+     "length": 801,
+     "is_module": false,
+     "language": "JavaScript",
+     "source_map_url": null,
+     "resource_reconciliation": {
+      "status": "unmatched",
+      "reason": "no_exact_sanitized_url"
+     },
+     "source": {
+      "included": false,
+      "reason": "source capture was not selected"
+     }
+    },
+    {
+     "script_key": "scr_282bffa56f74deb4520d698839e9b5891d31f42a4f0ccc3fde38617e400f5e71",
+     "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+     "url": "https://www.kodacademy.id/",
+     "origin": "https://www.kodacademy.id",
+     "cdp_hash": "8445f706570791478f35fd390dd50faeda12e7d067afc64416653434dbb81085",
+     "length": 1029,
+     "is_module": false,
+     "language": "JavaScript",
+     "source_map_url": null,
+     "resource_reconciliation": {
+      "status": "unmatched",
+      "reason": "no_exact_sanitized_url"
+     },
+     "source": {
+      "included": false,
+      "reason": "source capture was not selected"
+     }
+    },
+    {
+     "script_key": "scr_76bcb53a076ac2c03897b620bb1001a8e091c101d12c87de92a4ba0926468c33",
+     "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+     "url": "https://www.kodacademy.id/",
+     "origin": "https://www.kodacademy.id",
+     "cdp_hash": "d13309b7f74434a23c3ec0d8f44b1ef5c5e5448c2dbc8cc1d2eff640a4e9dbe3",
+     "length": 10888,
+     "is_module": false,
+     "language": "JavaScript",
+     "source_map_url": null,
+     "resource_reconciliation": {
+      "status": "unmatched",
+      "reason": "no_exact_sanitized_url"
+     },
+     "source": {
+      "included": false,
+      "reason": "source capture was not selected"
+     }
+    },
+    {
+     "script_key": "scr_7ce66ff45f83231b0ce934001f12617ed41a9395d88c4897795905cfb1c808e0",
+     "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+     "url": "https://www.kodacademy.id/",
+     "origin": "https://www.kodacademy.id",
+     "cdp_hash": "5ec4e12474bb7985c64422b4a905c9827b9f3f447cb8a0d2e7eb9cb9e52fe3a8",
+     "length": 214,
+     "is_module": false,
+     "language": "JavaScript",
+     "source_map_url": null,
+     "resource_reconciliation": {
+      "status": "unmatched",
+      "reason": "no_exact_sanitized_url"
+     },
+     "source": {
+      "included": false,
+      "reason": "source capture was not selected"
+     }
+    },
+    {
+     "script_key": "scr_a9b6234228fc793af87f9ef9ba50621466f9a89358de014fb2593a50529b0b3a",
+     "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+     "url": "https://www.kodacademy.id/",
+     "origin": "https://www.kodacademy.id",
+     "cdp_hash": "f1623dc6ae7e6c79ba6e225383c349367116e81f0d8a10a15368d94a6df70c80",
+     "length": 788,
+     "is_module": false,
+     "language": "JavaScript",
+     "source_map_url": null,
+     "resource_reconciliation": {
+      "status": "unmatched",
+      "reason": "no_exact_sanitized_url"
+     },
+     "source": {
+      "included": false,
+      "reason": "source capture was not selected"
+     }
+    },
+    {
+     "script_key": "scr_bcb42122158acf7b8b89753789bee5c2cdfcc8f49d5371a204e87c8a9a9e26d3",
+     "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+     "url": "https://www.kodacademy.id/",
+     "origin": "https://www.kodacademy.id",
+     "cdp_hash": "9b118bbe8cf68165e7bbac148027c4acaf46503685a664b5542d92b70b50a2b7",
+     "length": 109,
+     "is_module": false,
+     "language": "JavaScript",
+     "source_map_url": null,
+     "resource_reconciliation": {
+      "status": "unmatched",
+      "reason": "no_exact_sanitized_url"
+     },
+     "source": {
+      "included": false,
+      "reason": "source capture was not selected"
+     }
+    },
+    {
+     "script_key": "scr_beed836746247d4251c672df30abe93deef036dea46efc58f3d5570776407ed3",
+     "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+     "url": "https://www.kodacademy.id/",
+     "origin": "https://www.kodacademy.id",
+     "cdp_hash": "b76bc843efb451cebe77c317f154e3f75b41970cba1dfeae6f240d9787e0a601",
+     "length": 1140,
+     "is_module": false,
+     "language": "JavaScript",
+     "source_map_url": null,
+     "resource_reconciliation": {
+      "status": "unmatched",
+      "reason": "no_exact_sanitized_url"
+     },
+     "source": {
+      "included": false,
+      "reason": "source capture was not selected"
+     }
+    },
+    {
+     "script_key": "scr_c1fc833f0cd084ca4b8160eaa6bca5dce365d46caad692e4504b7c99ddb9101f",
+     "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+     "url": "https://www.kodacademy.id/",
+     "origin": "https://www.kodacademy.id",
+     "cdp_hash": "c91b6f0325cad1aeb7c3cad47963eba3b026fe7f8d2c30d221ff55d7e2ef1f69",
+     "length": 224,
+     "is_module": false,
+     "language": "JavaScript",
+     "source_map_url": null,
+     "resource_reconciliation": {
+      "status": "unmatched",
+      "reason": "no_exact_sanitized_url"
+     },
+     "source": {
+      "included": false,
+      "reason": "source capture was not selected"
+     }
+    },
+    {
+     "script_key": "scr_e278366ca15a96fe43b7a3e4fb9b94114a6953aa80dbdc430d20c8dbb3210c2c",
+     "frame_id": "508D9921F11FAB1E0BA5CCFB37C86064",
+     "url": "https://www.kodacademy.id/",
+     "origin": "https://www.kodacademy.id",
+     "cdp_hash": "52c125287dbf2716002a818595eb09b649530d5227efa92c00cf0f96032d095e",
+     "length": 444,
+     "is_module": false,
+     "language": "JavaScript",
+     "source_map_url": null,
+     "resource_reconciliation": {
+      "status": "unmatched",
+      "reason": "no_exact_sanitized_url"
+     },
+     "source": {
+      "included": false,
+      "reason": "source capture was not selected"
+     }
+    }
+   ]
+  },
+  "resources": [],
+  "network": {
+   "requests": [],
+   "websocket_connections": [],
+   "coverage_started_at": "2026-10-17T06:33:05.971Z",
+   "prior_activity_available": false
+  },
+  "console": {
+   "events": [],
+   "coverage_started_at": "2026-10-17T06:33:05.971Z",
+   "prior_activity_available": false
+  },
+  "workers": [],
+  "metadata": {
+   "responses": [],
+   "dom_urls": [
+    {
+     "node_index": 16,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 26,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 28,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 30,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 52,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 53,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 54,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 55,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 56,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 67,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 69,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 103,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2106,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 2123,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2140,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/pendaftaran",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 2144,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1671132905_464",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 2156,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg571920418_462",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 2172,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2186,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2201,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2215,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2230,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2244,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2259,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2273,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2288,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2302,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2317,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2331,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2346,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2360,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2375,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2389,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2404,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2418,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2433,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2447,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2462,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2466,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2470,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2474,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2478,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2482,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2486,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2490,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2494,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2498,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2502,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2506,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2510,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2514,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2518,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2522,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2526,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2530,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2534,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2538,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2542,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2546,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2550,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2554,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2558,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2562,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2566,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2570,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2574,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2578,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2584,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2627,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2633,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2655,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2661,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2683,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2689,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2711,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2717,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2739,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2745,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2767,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2773,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2795,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2801,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2823,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2829,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2851,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2857,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2879,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2885,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2907,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2913,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2935,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2941,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2963,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2969,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2991,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 2997,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3019,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3025,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3045,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/pendaftaran",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 3051,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3311,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg-1873484589_508",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 3318,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg188453974_634",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 3330,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3340,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3350,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3361,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3366,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3375,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3597,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3602,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3607,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3612,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3617,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3622,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3627,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3632,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3637,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3642,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3647,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3652,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3657,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3662,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3669,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3674,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3679,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3684,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3689,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3694,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3699,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3704,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3709,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3714,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3719,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3724,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3729,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3734,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3741,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3746,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3751,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3756,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3761,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3766,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3771,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3776,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3781,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3786,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3791,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3796,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3801,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3806,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3813,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3818,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3823,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3828,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3833,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3838,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3843,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3848,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3853,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3858,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3863,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3868,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3873,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 3878,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4115,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 4128,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 4141,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 4154,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 4167,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4169,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4388,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4394,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4418,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4442,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4457,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4469,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4482,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4494,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4510,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/pendaftaran",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 4514,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1671132905_464",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 4526,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg571920418_462",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 4531,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4535,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4543,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4558,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4570,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4583,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4595,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4611,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/pendaftaran",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 4615,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1671132905_464",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 4627,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg571920418_462",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 4632,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4636,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4670,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4692,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4714,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4736,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4758,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 4780,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5010,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 5024,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 5038,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 5052,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 5290,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5294,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1671132905_464",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5306,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg571920418_462",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5322,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg-1762608370_162",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5339,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1711477510_244",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5351,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1711477510_244",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5363,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1711477510_244",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5375,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1711477510_244",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5387,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1711477510_244",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5588,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5605,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/pendaftaran",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5609,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1671132905_464",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5621,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg571920418_462",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 5626,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5844,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5849,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5854,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5859,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5864,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5869,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5874,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5879,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5884,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5889,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5894,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5899,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5904,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5909,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5914,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5919,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5924,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5929,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5934,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5939,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5946,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5951,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5956,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5961,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5966,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5971,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5976,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5981,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5986,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5991,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 5996,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6001,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6006,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6011,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6016,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6021,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6026,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6031,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6036,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6041,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6048,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6053,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6058,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6063,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6068,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6073,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6078,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6083,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6088,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6093,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6098,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6103,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6108,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6113,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6118,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6123,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6128,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6133,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6138,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6143,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6348,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg631622697_4213",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 6368,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg1671132905_464",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 6381,
+     "attribute": "href",
+     "url": "https://www.kodacademy.id/#svg571920418_462",
+     "destination_scope": "approved"
+    },
+    {
+     "node_index": 6694,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6992,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 6993,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 7001,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7002,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 7010,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7011,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "unsupported"
+    },
+    {
+     "node_index": 7040,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7041,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7042,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7043,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7044,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7045,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7046,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7047,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7048,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7049,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7050,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7051,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7052,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7053,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7054,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7055,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7056,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7057,
+     "attribute": "href",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7058,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    },
+    {
+     "node_index": 7154,
+     "attribute": "src",
+     "url": null,
+     "destination_scope": "outside_policy"
+    }
+   ],
+   "agent_hints": [],
+   "excluded_dom_urls": 279,
+   "headers_allowlisted": true
+  },
+  "storage": {
+   "origin": "https://www.kodacademy.id",
+   "usage_bytes": 0,
+   "quota_bytes": 2320207872,
+   "local_storage_keys": [],
+   "session_storage_keys": [],
+   "indexed_db_names": [],
+   "cache_names": [],
+   "content_fingerprints": [],
+   "fingerprint_algorithm": "sha256",
+   "fingerprints_complete": false,
+   "values_redacted": true
+  },
+  "limitations": [
+   "Observation starts when REA attaches; prior network and console activity is unavailable.",
+   "Raw network headers, bodies, cookies, storage values, console objects, and WebSocket payloads are never retained; explicitly requested primitive console text is retained verbatim, while payload captures retain value-free shapes.",
+   "Source maps are reported only as declarative URLs and are not fetched.",
+   "URL-less scripts and console events without an allowed source URL are excluded because their origin cannot be proven."
+  ]
+ },
+ "confidence": "observed",
+ "authority": "external-service",
+ "environment": {
+  "id": "Chrome/152.0.7977.82@537.36 (@d04cdb24d67b081f6cf80200ffc5233f44b61109)",
+  "platform": "unknown",
+  "architecture": "unknown",
+  "isolation": "none"
+ },
+ "limitations": [
+  "Artifact identity is unavailable for this observation.",
+  "Observation starts when REA attaches; prior network and console activity is unavailable.",
+  "Raw network headers, bodies, cookies, storage values, console objects, and WebSocket payloads are never retained; explicitly requested primitive console text is retained verbatim, while payload captures retain value-free shapes.",
+  "Source maps are reported only as declarative URLs and are not fetched.",
+  "URL-less scripts and console events without an allowed source URL are excluded because their origin cannot be proven.",
+  "Browser host platform and architecture were not observed."
+ ],
+ "locations": [],
+ "evidence_links": [],
+ "_source_full_evidence": "/home/mahar/.hermes/cache/spillover/call_3f7e86d24f41.txt (1.5 MB, full)"
+}
