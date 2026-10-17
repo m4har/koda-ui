@@ -1,0 +1,420 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "name": "koda-ui",
+  "homepage": "https://github.com/m4har/koda-ui",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utils",
+      "description": "cn helper \u2014 clsx + tailwind-merge.",
+      "files": [
+        {
+          "path": "lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "globals",
+      "type": "registry:file",
+      "title": "koda-ui tokens",
+      "description": "Design tokens (:root/.dark + @theme inline bridge, shimmer/spinner keyframes).",
+      "files": [
+        {
+          "path": "app/globals.css",
+          "type": "registry:file",
+          "target": "app/globals.css"
+        }
+      ]
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "description": "Indeterminate loading icon.",
+      "files": [
+        {
+          "path": "components/ui/spinner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "The kit's one mono 10px uppercase micro-label primitive.",
+      "files": [
+        {
+          "path": "components/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "cva variants, press feedback with motion-reduce guard, loading/iconLeft/iconRight.",
+      "registryDependencies": [
+        "utils",
+        "spinner"
+      ],
+      "files": [
+        {
+          "path": "components/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Mono uppercase status token.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Panel set: Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Sharp-cornered text field.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Sharp-cornered multiline field.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Native select wrapper with chevron \u2014 zero deps.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "Hairline table primitives with mono headers.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Shimmering placeholder plus SkeletonText helper.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "Horizontal/vertical hairline rule.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "section-frame",
+      "type": "registry:ui",
+      "title": "SectionFrame",
+      "description": "Landing section chrome: hairline top, mono eyebrow, heading block.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/ui/section-frame.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "navbar",
+      "type": "registry:component",
+      "title": "Navbar",
+      "description": "Sticky landing chrome with mono links and one CTA.",
+      "registryDependencies": [
+        "utils",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "components/landing/navbar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "hero",
+      "type": "registry:component",
+      "title": "Hero",
+      "description": "Full-bleed hero: mono eyebrow, display heading, action slot.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/landing/hero.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "feature-grid",
+      "type": "registry:component",
+      "title": "FeatureGrid",
+      "description": "Hairline feature grid with auto-numbered mono indices.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/landing/feature-grid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "stat-counter",
+      "type": "registry:component",
+      "title": "StatCounter",
+      "description": "Numeric proof strip with accent values.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/landing/stat-counter.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "testimonial",
+      "type": "registry:component",
+      "title": "Testimonial",
+      "description": "Quote cards with initials squares \u2014 no photos needed.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/landing/testimonial.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "cta-band",
+      "type": "registry:component",
+      "title": "CtaBand",
+      "description": "Closing conversion band with accent hairline.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/landing/cta-band.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "footer",
+      "type": "registry:component",
+      "title": "Footer",
+      "description": "Brand block, mono link columns, bottom bar.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/landing/footer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-shell",
+      "type": "registry:component",
+      "title": "SidebarShell",
+      "description": "Console shell: 232px sticky sidebar column + sticky header chrome.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/dashboard/sidebar-shell.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "stat-card",
+      "type": "registry:component",
+      "title": "StatCard",
+      "description": "KPI panel with mono delta line.",
+      "registryDependencies": [
+        "utils",
+        "card",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/dashboard/stat-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "chart-shell",
+      "type": "registry:component",
+      "title": "ChartShell",
+      "description": "Chart-agnostic frame: title, legend slot, loading skeleton.",
+      "registryDependencies": [
+        "utils",
+        "card",
+        "label",
+        "skeleton"
+      ],
+      "files": [
+        {
+          "path": "components/dashboard/chart-shell.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "activity-feed",
+      "type": "registry:component",
+      "title": "ActivityFeed",
+      "description": "Vertical timeline with tone dots and empty state.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/dashboard/activity-feed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "data-table",
+      "type": "registry:component",
+      "title": "DataTable",
+      "description": "Typed rows over the table primitives with an empty state.",
+      "registryDependencies": [
+        "utils",
+        "table",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/dashboard/data-table.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "auth-card",
+      "type": "registry:component",
+      "title": "AuthCard",
+      "description": "Centered auth panel with brand mark and footer row.",
+      "registryDependencies": [
+        "utils",
+        "card",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/auth/auth-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}

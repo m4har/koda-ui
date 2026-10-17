@@ -94,3 +94,20 @@ Props tables and usage examples: [`docs/`](docs/).
 npm install
 npm run typecheck   # tsc --noEmit
 ```
+
+## Registry (optional)
+
+`registry.json` ships at the repo root, so once the repo is public on GitHub:
+
+```bash
+npx shadcn@latest add <user>/<repo>/button          # single item
+npx shadcn@latest add <user>/<repo>/button <user>/<repo>/card   # several
+npx shadcn@latest add <user>/<repo>/hero --dry-run # preview paths
+```
+
+Items: `utils` (lib), `globals` (tokens file), all `components/ui` names, plus
+`navbar`, `hero`, `feature-grid`, `stat-counter`, `testimonial`, `cta-band`, `footer`,
+`sidebar-shell`, `stat-card`, `chart-shell`, `activity-feed`, `data-table`, `auth-card`.
+`registryDependencies` pull `utils` and cross-group primitives automatically.
+Requires `components.json` + the `@/` alias in the consumer (see Install).
+
