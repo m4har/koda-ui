@@ -89,6 +89,42 @@ Load them in your app (Google Fonts / self-host); tokens only reference the fami
 
 Props tables and usage examples: [`docs/`](docs/).
 
+## Captures
+
+Rendered from the consumer gallery route (`koda-example` → `/gallery`) at 1440px, dark theme.
+
+| ![button](docs/captures/button.png) | ![badge](docs/captures/badge.png) | ![card](docs/captures/card.png) |
+| --- | --- | --- |
+| ![input](docs/captures/input.png) | ![textarea](docs/captures/textarea.png) | ![select](docs/captures/select.png) |
+| --- | --- | --- |
+| ![label](docs/captures/label.png) | ![separator](docs/captures/separator.png) | ![skeleton](docs/captures/skeleton.png) |
+| --- | --- | --- |
+| ![spinner](docs/captures/spinner.png) | ![table](docs/captures/table.png) | ![section-frame](docs/captures/section-frame.png) |
+| --- | --- | --- |
+| ![announcement-bar](docs/captures/announcement-bar.png) | ![rule-rail](docs/captures/rule-rail.png) | ![navbar](docs/captures/navbar.png) |
+| --- | --- | --- |
+| ![hero](docs/captures/hero.png) | ![stat-counter](docs/captures/stat-counter.png) | ![feature-grid](docs/captures/feature-grid.png) |
+| --- | --- | --- |
+| ![testimonial](docs/captures/testimonial.png) | ![accordion](docs/captures/accordion.png) | ![cta-band](docs/captures/cta-band.png) |
+| --- | --- | --- |
+| ![footer](docs/captures/footer.png) | ![sidebar-shell](docs/captures/sidebar-shell.png) | ![stat-card](docs/captures/stat-card.png) |
+| --- | --- | --- |
+| ![chart-shell](docs/captures/chart-shell.png) | ![activity-feed](docs/captures/activity-feed.png) | ![data-table](docs/captures/data-table.png) |
+| --- | --- | --- |
+| ![auth-card](docs/captures/auth-card.png) | ![modal](docs/captures/modal.png) | ![batches](docs/captures/batches.png) |
+| --- | --- | --- |
+
+Light theme (`ui/` primitives, 2x scale):
+
+| ![button](docs/captures/light/button.png) | ![badge](docs/captures/light/badge.png) | ![card](docs/captures/light/card.png) |
+| --- | --- | --- |
+| ![input](docs/captures/light/input.png) | ![textarea](docs/captures/light/textarea.png) | ![select](docs/captures/light/select.png) |
+| --- | --- | --- |
+| ![label](docs/captures/light/label.png) | ![separator](docs/captures/light/separator.png) | ![skeleton](docs/captures/light/skeleton.png) |
+| --- | --- | --- |
+| ![spinner](docs/captures/light/spinner.png) | ![table](docs/captures/light/table.png) | ![section-frame](docs/captures/light/section-frame.png) |
+| --- | --- | --- |
+
 ## Typecheck
 
 ```bash
