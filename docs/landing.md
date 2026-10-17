@@ -40,14 +40,16 @@ Sticky 20px strip above the navbar — koda blue, black uppercase 12px.
 
 ## RuleRail
 
-Left line-number rail: 28px column of 20px cells numbered 1..`rows`, full document
-height. Place inside a `relative` page wrapper — it scrolls with content (never fixed).
-Offset page content with `pl-7` (28px) on the same wrapper so text never sits under
-the rail at any viewport; the rail is absolute and always visible.
+Left line-number rail: 28px column of 20px cells numbered 1..N, full document
+height. Auto-sizes by default: a ResizeObserver measures the wrapper and renders
+height / 21 cells (20px cell + 1px gap), re-measured on resize — one rail adapts
+from mobile to desktop. Place inside a `relative` page wrapper; it scrolls with
+content (never fixed). Offset page content with `pl-7` (28px) on the same wrapper
+so text never sits under the rail at any viewport.
 
 | Name | Type | Note |
 | --- | --- | --- |
-| `rows` | `number` | Cells = documentHeight / 20; default `333` |
+| `rows` | `number` | Optional fixed count; omit for auto-size (measured height / 21, live on resize) |
 | `...props` | `HTMLAttributes<HTMLDivElement>` | Spread; `absolute left-0 top-0 w-7` preset, `aria-hidden` |
 
 ```tsx
