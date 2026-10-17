@@ -17,7 +17,7 @@ function RuleRail({ rows = 333, className, ...props }: RuleRailProps) {
     <div
       aria-hidden
       className={cn(
-        "absolute left-0 top-0 z-30 hidden h-full w-7 flex-col gap-px overflow-hidden lg:flex",
+        "absolute left-0 top-0 z-30 flex h-full w-7 flex-col gap-px overflow-hidden",
         className,
       )}
       {...props}
