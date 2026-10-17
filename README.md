@@ -60,6 +60,7 @@ No barrel files: import each component from its own path.
 | `--input` | `#CDCDCD` | `#323232` | Input borders |
 | `--ring` | `#FE5F21` | `#FE5F21` | Focus ring |
 | `--koda-blue` | `#6BC7F2` | `#6BC7F2` | Announcement bar / secondary accent |
+| `--alumni-pink` / `--alumni-yellow` / `--alumni-green` / `--alumni-blue` | `#F5A3C7` / `#F5D96B` / `#9BE39B` / `#8FC4F5` | same in dark | Alumni card tone accents (`alumni-carousel`) |
 | `--destructive` | `#F2433E` | `#F2433E` | Danger |
 | `--success` | `#35D49C` | `#35D49C` | Positive status |
 | `--warning` | `#FCBB40` | `#FCBB40` | Caution status |
@@ -83,7 +84,7 @@ Load them in your app (Google Fonts / self-host); tokens only reference the fami
 | Group | Components |
 | --- | --- |
 | `components/ui` | button, badge, card, input, textarea, label, select, table, skeleton, spinner, separator, section-frame |
-| `components/landing` | navbar, announcement-bar, rule-rail, hero, feature-grid, stat-counter, testimonial, cta-band, footer |
+| `components/landing` | navbar, announcement-bar, rule-rail, hero, feature-grid, career-pillars, curriculum-accordion, alumni-carousel, next-dirimu-band, stat-counter, testimonial, cta-band, footer |
 | `components/dashboard` | sidebar-shell, stat-card, chart-shell, activity-feed, data-table |
 | `components/auth` | auth-card |
 
@@ -143,7 +144,8 @@ npx shadcn@latest add <user>/<repo>/hero --dry-run # preview paths
 ```
 
 Items: `utils` (lib), `globals` (tokens file), all `components/ui` names, plus
-`navbar`, `announcement-bar`, `rule-rail`, `hero`, `feature-grid`, `stat-counter`, `testimonial`, `cta-band`, `footer`,
+`navbar`, `announcement-bar`, `rule-rail`, `hero`, `feature-grid`, `career-pillars`, `curriculum-accordion`,
+`alumni-carousel`, `next-dirimu-band`, `stat-counter`, `testimonial`, `cta-band`, `footer`,
 `sidebar-shell`, `stat-card`, `chart-shell`, `activity-feed`, `data-table`, `auth-card`.
 `registryDependencies` pull `utils` and cross-group primitives automatically.
 Requires `components.json` + the `@/` alias in the consumer (see Install).

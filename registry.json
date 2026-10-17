@@ -240,7 +240,7 @@
       "name": "feature-grid",
       "type": "registry:component",
       "title": "FeatureGrid",
-      "description": "Hairline feature grid with auto-numbered mono indices.",
+      "description": "Hairline feature grid with auto-numbered mono indices and optional 4:3 visual slots.",
       "registryDependencies": [
         "utils",
         "label"
@@ -248,6 +248,69 @@
       "files": [
         {
           "path": "components/landing/feature-grid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "career-pillars",
+      "type": "registry:component",
+      "title": "CareerPillars",
+      "description": "Eyebrow + heading + four uppercase pillar cards on a hairline grid.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/landing/career-pillars.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "curriculum-accordion",
+      "type": "registry:component",
+      "title": "CurriculumAccordion",
+      "description": "Numbered module accordion: trigger name carries 'Lihat N materi', header carries the module counter.",
+      "registryDependencies": [
+        "utils",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/landing/curriculum-accordion.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alumni-carousel",
+      "type": "registry:component",
+      "title": "AlumniCarousel",
+      "description": "Alumni story carousel with tone-tagged active slide, Previous/Next and 'Putar slide N' dot controls. Needs the --alumni-* tokens from globals.",
+      "registryDependencies": [
+        "utils",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "components/landing/alumni-carousel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "next-dirimu-band",
+      "type": "registry:component",
+      "title": "NextDirimuBand",
+      "description": "Full-width giant uppercase link band for the final registration CTA.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/landing/next-dirimu-band.tsx",
           "type": "registry:component"
         }
       ]

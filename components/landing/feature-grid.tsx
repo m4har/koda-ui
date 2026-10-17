@@ -7,6 +7,8 @@ interface Feature {
   title: string;
   description: string;
   icon?: React.ReactNode;
+  /** Full-bleed 4:3 visual (e.g. `<img>` or a muted placeholder block) — the "photo slot" cell. */
+  visual?: React.ReactNode;
 }
 
 interface FeatureGridProps extends React.HTMLAttributes<HTMLElement> {
@@ -28,6 +30,11 @@ function FeatureGrid({ className, features, ...props }: FeatureGridProps) {
           </div>
           <h3 className="font-display text-base font-semibold">{feature.title}</h3>
           <p className="text-sm text-muted-foreground">{feature.description}</p>
+          {feature.visual ? (
+            <div className="mt-1 aspect-[4/3] overflow-hidden border border-border [&_img]:size-full [&_img]:object-cover">
+              {feature.visual}
+            </div>
+          ) : null}
         </div>
       ))}
     </div>
