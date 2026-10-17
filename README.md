@@ -56,9 +56,10 @@ No barrel files: import each component from its own path.
 | `--secondary` | `#F1F1F1` | `#161616` | Quiet fill |
 | `--muted` | `#F5F5F5` | `#121212` | Skeleton / muted fill |
 | `--muted-foreground` | `#666666` | `#AFAFAF` | Secondary text |
-| `--border` | `#DDDDDD` | `#2A2A2A` | Hairlines |
+| `--border` | `#DDDDDD` | `#323232` | Hairlines |
 | `--input` | `#CDCDCD` | `#323232` | Input borders |
 | `--ring` | `#FE5F21` | `#FE5F21` | Focus ring |
+| `--koda-blue` | `#6BC7F2` | `#6BC7F2` | Announcement bar / secondary accent |
 | `--destructive` | `#F2433E` | `#F2433E` | Danger |
 | `--success` | `#35D49C` | `#35D49C` | Positive status |
 | `--warning` | `#FCBB40` | `#FCBB40` | Caution status |
@@ -82,7 +83,7 @@ Load them in your app (Google Fonts / self-host); tokens only reference the fami
 | Group | Components |
 | --- | --- |
 | `components/ui` | button, badge, card, input, textarea, label, select, table, skeleton, spinner, separator, section-frame |
-| `components/landing` | navbar, hero, feature-grid, stat-counter, testimonial, cta-band, footer |
+| `components/landing` | navbar, announcement-bar, rule-rail, hero, feature-grid, stat-counter, testimonial, cta-band, footer |
 | `components/dashboard` | sidebar-shell, stat-card, chart-shell, activity-feed, data-table |
 | `components/auth` | auth-card |
 
@@ -106,7 +107,7 @@ npx shadcn@latest add <user>/<repo>/hero --dry-run # preview paths
 ```
 
 Items: `utils` (lib), `globals` (tokens file), all `components/ui` names, plus
-`navbar`, `hero`, `feature-grid`, `stat-counter`, `testimonial`, `cta-band`, `footer`,
+`navbar`, `announcement-bar`, `rule-rail`, `hero`, `feature-grid`, `stat-counter`, `testimonial`, `cta-band`, `footer`,
 `sidebar-shell`, `stat-card`, `chart-shell`, `activity-feed`, `data-table`, `auth-card`.
 `registryDependencies` pull `utils` and cross-group primitives automatically.
 Requires `components.json` + the `@/` alias in the consumer (see Install).

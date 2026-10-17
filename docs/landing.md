@@ -10,15 +10,49 @@ Sticky top chrome matching the dashboard shell header.
 | --- | --- | --- |
 | `brand` | `string` | Mono wordmark |
 | `items` | `{ label: string; href: string }[]` | Nav links; hidden below `md` |
-| `cta` | `{ label: string; href: string }` | Renders a `Button asChild` |
-| `...props` | `HTMLAttributes<HTMLElement>` | Spread; `sticky top-0 z-40` preset |
+| `cta` | `{ label: string; href: string }` | Renders a `Button asChild` — dark `#222222` fill |
+| `...props` | `HTMLAttributes<HTMLElement>` | Spread; `sticky top-5 z-40 h-10` preset (sticks under `AnnouncementBar`) |
 
 ```tsx
+<AnnouncementBar>Registration closes 30 Sep 2026 — 10 seats left</AnnouncementBar>
 <Navbar
   brand="Koda"
   items={[{ label: "Curriculum", href: "#curriculum" }, { label: "Alumni", href: "#alumni" }]}
   cta={{ label: "Apply now", href: "/apply" }}
 />
+```
+
+## AnnouncementBar
+
+Sticky 20px strip above the navbar — koda blue, black uppercase 12px.
+
+| Name | Type | Note |
+| --- | --- | --- |
+| `children` | `ReactNode` | Message; styled uppercase 12px |
+| `href` | `string` | Optional — wraps the message in a link |
+| `...props` | `HTMLAttributes<HTMLElement>` | Spread; `sticky top-0 z-50 h-5 bg-koda-blue` preset |
+
+```tsx
+<AnnouncementBar href="/apply">
+  Registration closes 30 Sep 2026 — 10 seats left
+</AnnouncementBar>
+```
+
+## RuleRail
+
+Left line-number rail: 28px column of 20px cells numbered 1..`rows`, full document
+height. Place inside a `relative` page wrapper — it scrolls with content (never fixed).
+
+| Name | Type | Note |
+| --- | --- | --- |
+| `rows` | `number` | Cells = documentHeight / 20; default `333` |
+| `...props` | `HTMLAttributes<HTMLDivElement>` | Spread; `absolute left-0 top-0 w-7` preset, `aria-hidden` |
+
+```tsx
+<div className="relative">
+  <RuleRail rows={333} />
+  {/* page content */}
+</div>
 ```
 
 ## Hero
@@ -111,13 +145,15 @@ Closing conversion band with accent hairline.
 
 ## Footer
 
-Brand block + mono link columns + bottom bar.
+Brand block + mono link columns + newsletter row + socials + bottom bar.
 
 | Name | Type | Note |
 | --- | --- | --- |
 | `brand` | `string` | Wordmark; also used in copyright |
 | `tagline` | `string` | One-liner under the brand |
 | `columns` | `{ title, links: { label, href }[] }[]` | Link columns |
+| `newsletter` | `{ heading?, placeholder?, buttonLabel? } \| false` | Newsletter row; default button label `Langganan` (`#434343` fill); `false` hides |
+| `socials` | `{ label, href, icon }[]` | Defaults to Instagram / LinkedIn / YouTube |
 | `...props` | `HTMLAttributes<HTMLElement>` | Spread |
 
 ```tsx
@@ -125,5 +161,6 @@ Brand block + mono link columns + bottom bar.
   brand="Koda"
   tagline="Career-first engineering bootcamp."
   columns={[{ title: "Program", links: [{ label: "Curriculum", href: "#curriculum" }] }]}
+  newsletter={{ buttonLabel: "Langganan" }}
 />
 ```

@@ -304,14 +304,47 @@
       "name": "footer",
       "type": "registry:component",
       "title": "Footer",
-      "description": "Brand block, mono link columns, bottom bar.",
+      "description": "Brand block, mono link columns, newsletter row, socials, bottom bar.",
+      "registryDependencies": [
+        "utils",
+        "label",
+        "input",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "components/landing/footer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "announcement-bar",
+      "type": "registry:component",
+      "title": "AnnouncementBar",
+      "description": "Sticky 20px koda-blue uppercase strip above the navbar.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "components/landing/announcement-bar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "rule-rail",
+      "type": "registry:component",
+      "title": "RuleRail",
+      "description": "Left line-number rail: 28px column of numbered 20px cells, full document height.",
       "registryDependencies": [
         "utils",
         "label"
       ],
       "files": [
         {
-          "path": "components/landing/footer.tsx",
+          "path": "components/landing/rule-rail.tsx",
           "type": "registry:component"
         }
       ]
